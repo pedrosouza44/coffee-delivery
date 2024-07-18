@@ -1,5 +1,4 @@
 import { HeaderContainer } from "./styles";
-import Logo from '../../assets/Logo.svg';
 import { MapPin, ShoppingCart } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { useCart } from "../../hooks/useCart";
@@ -21,7 +20,6 @@ export function Header() {
         <Link to={`cart`} aria-disabled={cart.length === 0}>
           <ShoppingCart size={22} weight="fill" />
           {cart.length > 0 ? <span>{cart.length}</span> : null}
-
         </Link>
       </div>
     </HeaderContainer>
